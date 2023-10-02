@@ -17,11 +17,11 @@ alias load_cpu='procs --sortd cpu | head -5'
 alias load_proc='procs --tree'
 
 #-----------------#
-#-Distro specific-#
+#-Variable aliase-#
 #-----------------#
 
-#-------Void------#
 source voidenv
+source jailed
 
 #-------------#
 #---- git-----#
