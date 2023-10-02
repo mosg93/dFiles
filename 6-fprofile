@@ -1,0 +1,5 @@
+#!/bin/bash
+
+firefox -CreateProfile "Hardened  ~/.mozilla/firefox/hardened"
+curl -o user.js https://codeberg.org/Narsil/user.js/raw/branch/main/desktop/user.js
+mv user.js ~/.mozilla/firefox/hardened/user.js
