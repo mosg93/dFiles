@@ -1,1 +1,1 @@
-alias safefox='firejail --dns=1.1.1.2 --dns=1.0.0.2 firefox -P "Hardened"'
+alias safefox='firejail --dns=1.1.1.2 --dns=1.0.0.2 firefox --profile ~/.mozilla/firefox/Hardened
