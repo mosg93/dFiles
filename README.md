@@ -13,3 +13,4 @@ Configuration files that I may, or not, use for my Void Linux boxes
 10../5-final-strap.sh
 11. Install libxft-bgra; chadwm; st
 12. try the instructions from 6-fprofile
+13. mod the launch sh of chadwm to add setxkbmap and change the wallpaper dir
