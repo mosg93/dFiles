@@ -3,30 +3,11 @@
 #--------changes done to my conf--#
 #---------------------------------#
 
-# Aiuda
-alias aiuda='echo "ls ll lt: list files, load_ mem|cpu|proc, vpre debe ser usado en el directorio de void-packages para reemplazar apquetes con su version compilada, cprg quita los binarios del cache del instalador"'
-
-# directory alias
-alias ls='exa -aG --color=always --icons --group-directories-first'
-alias ll='exa -Glah --icons --group-directories-first'
-alias lt='exa -Glah --icons --group-directories-first --tree'
-
-# procs alias
-alias load_mem='procs --sortd mem | head -5'
-alias load_cpu='procs --sortd cpu | head -5'
-alias load_proc='procs --tree'
-
-#-----------------#
-#-Variable aliase-#
-#-----------------#
-
-source voidenv
-source jailed
 
 #-------------#
 #---- git-----#
 #-------------#
-alias lg='lazygit'
+#alias lg='lazygit'
 alias gcl='git clone'
 alias gin='git init'
 alias gad='git add'
@@ -35,7 +16,7 @@ alias gp='git push'
 alias gst='git status'
 
 #merge new settings
-alias merge="xrdb -merge ~/.Xresources"
+#alias merge="xrdb -merge ~/.Xresources"
 
 #youtube download
 alias yta-aac="yt-dlp --extract-audio --audio-format aac "
@@ -51,9 +32,6 @@ alias ebsh="$EDITOR ~/.bashrc"
 alias ezsh="$EDITOR ~/.config/zsh/.zshrc"
 alias efish="$EDITOR ~/.config/fish/config.fish"
 
-#WM/DW
-alias chadwm='startx ~/.config/chadwm/scripts/run.sh'
-alias obx='startx /usr/bin/openbox --startup ~/.config/openbox/autostart'
 
 # # ex = EXtractor for all kinds of archives
 # # usage: ex <file>
