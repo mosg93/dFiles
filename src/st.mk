@@ -28,7 +28,7 @@ LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXft -lgd \
 
 # flags
 STCPPFLAGS = -DVERSION=\"$(VERSION)\" -DICON=\"$(ICONPREFIX)/$(ICONNAME)\" -D_XOPEN_SOURCE=600
-STCFLAGS = $(INCS) $(STCPPFLAGS) $(CPPFLAGS) $(CFLAGS) -O3 -march=znver2 -mtune=znver2 -msse -msse2 -msse3 -mmmx -flto -mpclmul -pipe
+STCFLAGS = $(INCS) $(STCPPFLAGS) $(CPPFLAGS) $(CFLAGS) -Os -march=znver2 -pipe
 STLDFLAGS = $(LIBS) $(LDFLAGS)
 
 # OpenBSD:
