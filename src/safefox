@@ -1,0 +1,3 @@
+#!/bin/bash
+
+firejail --dns=1.1.1.2 --dns=1.0.0.2 firefox --profile ~/.mozilla/firefox/Hardened & 2> /dev/null; exit;
