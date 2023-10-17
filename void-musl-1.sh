@@ -19,7 +19,6 @@ mkdir ~/usr/{bin,var,opt,etc,mnt,media,tmp}
 # Obtener archivos de internet
 cd ~
 git clone https://github.com/siduck/st.git ~/usr/local/Suckless/st
-#git clone https://github.com/void-linux/void-packages.git ~/usr/local/void-packages
 git clone https://github.com/uditkarode/libxft-bgra ~/usr/share/lib/libxft-bgra
 git clone https://github.com/siduck/chadwm --depth 1  ~/.config/chadwm
 
@@ -44,7 +43,6 @@ rm ~/.config/chadwm/chadwm/config.mk
 rm ~/.config/chadwm/chadwm/config.def.h
 rm ~/usr/local/void-packages/etc/default.conf
 
-#mv ~/voidFiles/src/default.conf ~/usr/local/void-packages/etc/default.conf
 mv ~/dFiles/src/chad.mk ~/.config/chadwm/chadwm/config.mk
 mv ~/dFiles/src/chad.defh ~/.config/chadwm/chadwm/config.def.h
 mv ~/dFiles/src/st.mk ~/usr/local/Suckless/st/config.mk
