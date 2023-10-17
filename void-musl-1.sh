@@ -30,8 +30,7 @@ wget https://github.com/catppuccin/gtk/releases/download/v0.4.1/Catppuccin-Mocha
 cd ~/usr/opt
 wget https://github.com/Kron4ek/Conty/releases/download/1.21.11/conty.sh && chmod +x conty.sh
 ln -s ~/usr/opt/conty.sh ~/usr/bin/Conty
-wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.4.16/Obsidian-1.4.16.AppImage
-&& chmod a+x Obsidian-1.4.16.AppImage
+wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.4.16/Obsidian-1.4.16.AppImage && chmod a+x Obsidian-1.4.16.AppImage
 ln -s ~/usr/opt/Obsidian-1.4.16.AppImage ~/usr/bin/obsidian
 
 cd ~/usr/tmp
