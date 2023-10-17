@@ -7,7 +7,7 @@ mv ~/dFiles/src/voidebv ~/usr/share/voidenv
 
 # Paquetes binarios iniciales
 
-sudo xbps-install -S void-repo-nonfree util-linux bsdtar coreutils binutils libatomic-devel base-devel curl wget linux-firmware-amd xtools git bat ripgrep fd exa procs helix neovim htop neofetch ntfs-3g p7zip dust fish-shell lazygit dejavu-fonts-ttf xdg-user-dirs imlib2 imlib2-devel libXft-devel libX11-devel harfbuzz-devel libXext-devel libXrender-devel libXinerama-devel gd-devel freetype-devel xorg-minimal xinit xhost xauth xorg-server xorg-util-macros picom gtk+3 jwm aria2 firefox feh mesa-dri vulkan-loader mesa-vulkan-radeon xf86-video-amdgpu xf86-input-libinput mesa-vaapi mesa-vdpau rofi xrdb maim xclip yt-dlp mpv volumeicon alsa-utils pulseaudio pavucontrol mcomix firejail setxkbmap psmisc rustup zola
+sudo xbps-install -S void-repo-nonfree util-linux bsdtar coreutils binutils libatomic-devel base-devel curl wget linux-firmware-amd xtools git bat ripgrep fd exa procs helix neovim htop neofetch ntfs-3g p7zip dust fish-shell lazygit dejavu-fonts-ttf xdg-user-dirs imlib2 imlib2-devel libXft-devel libX11-devel harfbuzz-devel libXext-devel libXrender-devel libXinerama-devel gd-devel freetype-devel xorg-minimal xinit xhost xauth xorg-server xorg-util-macros picom gtk+3 jwm aria2 firefox feh mesa-dri vulkan-loader mesa-vulkan-radeon xf86-video-amdgpu xf86-input-libinput mesa-vaapi mesa-vdpau rofi xrdb maim xclip yt-dlp mpv volumeicon alsa-utils pulseaudio pavucontrol mcomix firejail setxkbmap psmisc rustup zola pcmanfm
 
 # Directorios iniciales
 xdg-user-dirs-update
