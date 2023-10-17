@@ -19,14 +19,13 @@ mkdir ~/usr/{bin,var,opt,etc,mnt,media,tmp}
 # Obtener archivos de internet
 cd ~
 git clone https://github.com/siduck/st.git ~/usr/local/Suckless/st
-git clone https://github.com/void-linux/void-packages.git ~/usr/local/void-packages
+#git clone https://github.com/void-linux/void-packages.git ~/usr/local/void-packages
 git clone https://github.com/uditkarode/libxft-bgra ~/usr/share/lib/libxft-bgra
 git clone https://github.com/siduck/chadwm --depth 1  ~/.config/chadwm
 
 cd ~/usr/share/fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/JetBrainsMono.zip
 wget https://www.wfonts.com/download/data/2016/04/23/symbola/symbola.zip
-
 
 cd ~/usr/opt
 wget https://github.com/Kron4ek/Conty/releases/download/1.21.11/conty.sh && chmod +x conty.sh
@@ -45,7 +44,7 @@ rm ~/.config/chadwm/chadwm/config.mk
 rm ~/.config/chadwm/chadwm/config.def.h
 rm ~/usr/local/void-packages/etc/default.conf
 
-mv ~/voidFiles/src/default.conf ~/usr/local/void-packages/etc/default.conf
+#mv ~/voidFiles/src/default.conf ~/usr/local/void-packages/etc/default.conf
 mv ~/dFiles/src/chad.mk ~/.config/chadwm/chadwm/config.mk
 mv ~/dFiles/src/chad.defh ~/.config/chadwm/chadwm/config.def.h
 mv ~/dFiles/src/st.mk ~/usr/local/Suckless/st/config.mk
