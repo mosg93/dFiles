@@ -7,7 +7,7 @@ mv ~/dFiles/src/voidebv ~/usr/share/voidenv
 
 # Paquetes binarios iniciales
 
-sudo xbps-install -S void-repo-nonfree util-linux bsdtar coreutils binutils libatomic-devel base-devel curl wget linux-firmware-amd xtools git bat ripgrep fd exa procs helix neovim htop neofetch ntfs-3g p7zip dust fish-shell lazygit dejavu-fonts-ttf xdg-user-dirs imlib2 imlib2-devel libXft-devel libX11-devel harfbuzz-devel libXext-devel libXrender-devel libXinerama-devel gd-devel freetype-devel xorg-minimal xinit xhost xauth xorg-server xorg-util-macros picom gtk+3 jwm aria2 firefox feh mesa-dri vulkan-loader mesa-vulkan-radeon xf86-video-amdgpu xf86-input-libinput mesa-vaapi mesa-vdpau rofi xrdb maim xclip yt-dlp mpv volumeicon alsa-utils pulseaudio pavucontrol mcomix firejail setxkbmap psmisc rustup zola pcmanfm
+sudo xbps-install -S void-repo-nonfree util-linux bsdtar coreutils binutils libatomic-devel base-devel curl wget linux-firmware-amd xtools git bat ripgrep fd exa procs helix neovim htop neofetch ntfs-3g p7zip dust fish-shell lazygit dejavu-fonts-ttf xdg-user-dirs imlib2 imlib2-devel libXft-devel libX11-devel harfbuzz-devel libXext-devel libXrender-devel libXinerama-devel gd-devel freetype-devel xorg-minimal xinit xhost xauth xorg-server xorg-util-macros picom gtk+3 icewm aria2 firefox feh mesa-dri vulkan-loader mesa-vulkan-radeon xf86-video-amdgpu xf86-input-libinput mesa-vaapi mesa-vdpau rofi xrdb maim xclip yt-dlp mpv volumeicon alsa-utils pulseaudio pavucontrol mcomix firejail setxkbmap psmisc rustup zola pcmanfm nerd-fonts-ttf audacious audacious-plugins geany
 
 # Directorios iniciales
 xdg-user-dirs-update
@@ -23,12 +23,10 @@ git clone https://github.com/uditkarode/libxft-bgra ~/usr/share/lib/libxft-bgra
 git clone https://github.com/siduck/chadwm --depth 1  ~/.config/chadwm
 
 cd ~/usr/share/fonts
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/JetBrainsMono.zip
+#wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/JetBrainsMono.zip
 wget https://www.wfonts.com/download/data/2016/04/23/symbola/symbola.zip
 
 cd ~/usr/opt
-wget https://github.com/Kron4ek/Conty/releases/download/1.21.11/conty.sh && chmod +x conty.sh
-ln -s ~/usr/opt/conty.sh ~/usr/bin/Conty
 wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.4.16/Obsidian-1.4.16.AppImage && chmod a+x Obsidian-1.4.16.AppImage
 ln -s ~/usr/opt/Obsidian-1.4.16.AppImage ~/usr/bin/obsidian
 
