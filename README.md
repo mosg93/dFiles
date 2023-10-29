@@ -20,6 +20,7 @@ Configuration files that I may, or not, use for my Void Linux boxes
 9. mod the launch sh of chadwm to add setxkbmap and change the wallpaper dir
 
 ## Artix
+basestrap /mnt base base-devel s6-base elogind-s6 linux-zen linux-firmware nano grub os-prober efibootmgr connman-s6 connman-gtk
 1. ./art-ix.sh
 2. install the downloaded fonts libs terminal and wm
 3. final touches
