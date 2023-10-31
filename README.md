@@ -8,6 +8,8 @@ Configuration files that I may, or not, use for my Void Linux boxes
 3. cd ~/voidFiles
 4. chmod +x *.sh
 
+https://github.com/mobinmob/void-66-services/blob/master/conf/void-66-conf.md
+
 ## Void
 1. ./1-strap.sh
 2. ./2-basepkgs.sh
