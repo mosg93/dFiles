@@ -47,8 +47,8 @@ mv ~/dFiles/src/st.mk ~/usr/local/Suckless/st/config.mk
 
 # init config
 sudo 66boot-initial-setup
-66boot-storage-autoconf
-66boot-rcdotconf 
+sudo 66boot-storage-autoconf
+sudo 66boot-rcdotconf 
 sudo 66-enable -t boot -F boot@system
 sudo 66-enable connmand
 sudo xbps-install -Sy 66-void base-system-66
