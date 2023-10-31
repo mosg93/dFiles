@@ -6,8 +6,8 @@ mv ~/dFiles/src/alias ~/usr/share/alias
 mv ~/dFiles/src/voidebv ~/usr/share/voidenv
 
 # Paquetes binarios iniciales
-
-sudo xbps-install -S void-repo-nonfree util-linux bsdtar coreutils binutils libatomic-devel base-devel curl wget linux-firmware-amd xtools git bat ripgrep fd exa procs helix neovim htop neofetch ntfs-3g p7zip dust fish-shell lazygit dejavu-fonts-ttf xdg-user-dirs imlib2 imlib2-devel libXft-devel libX11-devel harfbuzz-devel libXext-devel libXrender-devel libXinerama-devel gd-devel freetype-devel xorg-minimal xinit xhost xauth xorg-server xorg-util-macros picom gtk+3 icewm aria2 firefox feh mesa-dri vulkan-loader mesa-vulkan-radeon xf86-video-amdgpu xf86-input-libinput mesa-vaapi mesa-vdpau rofi xrdb maim xclip yt-dlp mpv volumeicon alsa-utils pulseaudio pavucontrol mcomix firejail setxkbmap psmisc rustup zola pcmanfm nerd-fonts-ttf audacious audacious-plugins geany
+sudo xbps-install -Sy --repository=https://avyssos.eu/repos/voidlinux/66/ void-unofficial-repo-66
+sudo xbps-install -S void-repo-nonfree util-linux bsdtar coreutils binutils libatomic-devel base-devel curl wget linux-firmware-amd xtools git bat ripgrep fd exa procs helix neovim htop neofetch ntfs-3g p7zip dust fish-shell lazygit xdg-user-dirs imlib2 imlib2-devel libXft-devel libX11-devel harfbuzz-devel libXext-devel libXrender-devel libXinerama-devel gd-devel freetype-devel xorg-minimal xinit xhost xauth xorg-server xorg-util-macros picom gtk+3 icewm aria2 firefox feh mesa-dri vulkan-loader mesa-vulkan-radeon xf86-video-amdgpu xf86-input-libinput mesa-vaapi mesa-vdpau rofi xrdb maim xclip yt-dlp mpv volumeicon alsa-utils pulseaudio pavucontrol mcomix firejail setxkbmap psmisc rustup zola pcmanfm nerd-fonts-ttf audacious audacious-plugins geany connmand dbus elogin polkit dbus boot-66serv void-66-services s6-rc
 
 # Directorios iniciales
 xdg-user-dirs-update
@@ -44,3 +44,11 @@ rm ~/usr/local/void-packages/etc/default.conf
 mv ~/dFiles/src/chad.mk ~/.config/chadwm/chadwm/config.mk
 mv ~/dFiles/src/chad.defh ~/.config/chadwm/chadwm/config.def.h
 mv ~/dFiles/src/st.mk ~/usr/local/Suckless/st/config.mk
+
+# init config
+sudo 66boot-initial-setup
+66boot-storage-autoconf
+66boot-rcdotconf 
+sudo 66-enable -t boot -F boot@system
+sudo 66-enable connmand
+sudo xbps-install -Sy 66-void base-system-66
