@@ -56,4 +56,5 @@ sudo 66boot-storage-autoconf
 sudo 66boot-rcdotconf 
 sudo 66-enable -t boot -F boot@system
 sudo 66-enable connmand
+sudo 66-enable -t boot -F boot@system
 sudo xbps-install -Sy 66-void base-system-66
